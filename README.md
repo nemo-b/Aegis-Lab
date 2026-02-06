@@ -33,9 +33,19 @@ For the full narrative of the build, including the **5-hour Phase 5 deep-dive in
 
 ## 📸 Technical Proof
 
-**Splunk Telemetry Validation:** ![[Splunk Logs from Pi-Hole.png]] _Confirmation of successful data ingestion showing raw DNS query logs in the Splunk main index._
+**Splunk Telemetry Validation:**
+<p align="center">
+  <img src="images/Getting%20Splunk%20Logs%20from%20Pi-Hole.png" alt="Getting Splunk Logs from Pi-Hole" width="500">
+</p>
 
-**Security Analytics Dashboard:** ![[Splunk Logs from the App View.png]] _The final SOC view: Visualizing permitted vs. blocked traffic across the virtualized network._
+_Confirmation of successful data ingestion showing raw DNS query logs in the Splunk main index._
+
+**Security Analytics Dashboard:**
+<p align="center">
+  <img src="images/Splunk%20Logs%20from%20the%20App%20Veiw.png" alt="Splunk Logs from the App Veiw" width="500">
+</p>
+
+_The final SOC view: Visualizing permitted vs. blocked traffic across the virtualized network._
 
 ## 📝 Key Learning Outcomes
 
