@@ -176,7 +176,7 @@ After resolving a volume-mapping issue to expose the logs (moving from `/etc/` t
 To ensure the new configuration was active, I managed the system-level background processes.
 
 <p align="center">
-  <img src="images/Restarting%20the%20SplunkForwarder%20from%20services.msc.png" alt="SOC Dashboard Example" width="500">
+  <img src="images/Restarting%20the%20SplunkForwarder%20from%20services.msc.png" alt="Restarting the SplunkForwarder from services.msc" width="500">
 </p>
 
 _Validation of the SplunkForwarder service status within services.msc. This step was critical to ensure the Universal Forwarder was running with the updated 'inputs.conf' settings._
@@ -186,8 +186,9 @@ _Validation of the SplunkForwarder service status within services.msc. This step
 With the forwarder live, I needed to verify that the raw data was actually reaching the indexer. I performed a targeted search in Splunk to confirm the handshake between the Docker container and the SIEM was successful.
 
 <p align="center">
-  <img src="images/Getting%20Splunk%20Logs%20from%20Pi-Hole.png" alt="SOC Dashboard Example" width="500">
+  <img src="images/Getting%20Splunk%20Logs%20from%20Pi-Hole.png" alt="Getting Splunk Logs from Pi-Hole" width="500">
 </p>
+
 _Raw telemetry validation using the SPL query 'index=main sourcetype="pihole:log"'.Seeing these initial log entries confirmed that the data pipeline was 100% functional._
 
 ## **4.4 Dashboarding & Data Visualization**
@@ -195,8 +196,9 @@ _Raw telemetry validation using the SPL query 'index=main sourcetype="pihole:log
 The final "Victory Moment" was transforming raw text into actionable intelligence. I installed the **xPi-Hole Analytics** app and re-mapped the internal macros to point to my custom `main` index.
 
 <p align="center">
-  <img src="images/Splunk%20Logs%20from%20the%20App%20Veiw.png" alt="SOC Dashboard Example" width="500">
+  <img src="images/Splunk%20Logs%20from%20the%20App%20Veiw.png" alt="Splunk Logs from the App Veiw" width="500">
 </p>
+
 _The final SOC Dashboard in the xPi-Hole app. This visualization captures the first 83 queries processed by the lab, providing a high-level view of permitted vs. blocked traffic across the network._
 
 ### Summary of Success
@@ -229,8 +231,9 @@ During testing, I encountered a significant hurdle: **Port Contention**. Windows
 Even with host-level networking restrictions, the "Plumbing" of the lab remained robust. By inspecting the local directory, I confirmed that the Docker volume was successfully persisting telemetry data from the container to the Windows host for Splunk to ingest.
 
 <p align="center">
-  <img src="images/pihole.log%20Logs%201.png" alt="SOC Dashboard Example" width="500">
+  <img src="images/Pi-Hole%20log%20Logs.png" alt="pihole.log Logs" width="500">
 </p>
+
 _Pi-hole logs visible in Windows File Explorer or Notepad showing query data_
 
 ## **5.4 Project Conclusion: Infrastructure Logic**
