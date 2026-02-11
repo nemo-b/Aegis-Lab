@@ -27,7 +27,7 @@ This lab follows an engineering-first approach to infrastructure and monitoring:
 
 ## 📄 Documentation & Engineering Logs
 
-For the full narrative of the build, including the **5-hour Phase 5 deep-dive into network troubleshooting**, see:
+*Phase 5*: Resolved a critical service failure by identifying Port 53 contention between the Windows 'Shared Access' service and the Docker environment, restoring network-wide filtering through IaC (Infrastructure as Code) adjustments.
 
 - **[Project-Aegis-Notes]()** _This document contains task checklists, YAML configurations, and reflections on overcoming hybrid-OS networking challenges._
 
