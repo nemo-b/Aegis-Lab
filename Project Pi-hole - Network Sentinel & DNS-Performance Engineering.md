@@ -15,7 +15,7 @@ In this project, I will deploy a network-wide DNS-Sinkhole (using **Pi-hole** or
 _**Objective:** Deploy a high-availability DNS engine using Docker Desktop on Windows 11._
 - [x] **WSL 2 Backend Hardening:** Resolved "Server Resolution" errors via manual kernel MSI installation.
     - Verified Virtualization (VT-x/SVM) is enabled in BIOS/UEFI.
-- [x] **Infrastructure as Code (IaC):** Created `docker-compose.yml` in the `Aegis-Lab` directory.
+- [x] **Infrastructure as Code (IaC):** Created `docker-compose.yml` in the `Pihole-Lab` directory.
     - Configured environment variables for the Pi-hole administrative password.
 - [x] **Deployment:** Execute `docker-compose up -d` to pull the Pi-hole image and initialize the container.
     - Access the local dashboard via `http://localhost/admin`.
