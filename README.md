@@ -1,4 +1,4 @@
-# 🛡️ Project Aegis — DNS Sinkhole & SIEM Telemetry Pipeline
+# 🛡️ Pi-Hole Integration — DNS Sinkhole & SIEM Telemetry Pipeline
 
 **Goal:** Engineer a secure, containerized DNS resolver and establish a robust data pipeline to **Splunk SIEM** for real-time network visibility and threat detection.
 
@@ -29,7 +29,7 @@ This lab follows an engineering-first approach to infrastructure and monitoring:
 
 *Phase 5*: Resolved a critical service failure by identifying Port 53 contention between the Windows 'Shared Access' service and the Docker environment, restoring network-wide filtering through IaC (Infrastructure as Code) adjustments.
 
-- **[Project-Aegis-Notes]()** _This document contains task checklists, YAML configurations, and reflections on overcoming hybrid-OS networking challenges._
+- **[Project-Pihole-Notes]()** _This document contains task checklists, YAML configurations, and reflections on overcoming hybrid-OS networking challenges._
 
 ## 📸 Technical Proof
 
